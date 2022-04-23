@@ -2,6 +2,7 @@
 @import url(./styles/Navbar.css);
 @import url(./styles/Home.css);
 @import url(./styles/About.css);
+@import url(./styles/Skills.css);
 
 body{
     background-color:#0a192f;
@@ -11,6 +12,6 @@ body{
 }
 @media screen and (min-width: 0) {
     .common-width{
-        margin: 0 6%;
+        margin: 5% 6%;
     }
 }
