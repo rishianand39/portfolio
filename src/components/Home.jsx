@@ -1,6 +1,6 @@
 import React from "react";
 import {HiArrowNarrowRight} from "react-icons/hi"
-import profile from '../assets/profile.JPG'
+
 export const Home=()=>{
 
     return(
@@ -15,9 +15,9 @@ export const Home=()=>{
                     <button className="view-work-btn">View Work<HiArrowNarrowRight className="arrow"/></button>
                 </div>
             </div>
-            <div className="image-div">
+            {/* <div className="image-div">
                 <img src={profile} alt="" />
-            </div>
+            </div> */}
         </div>
     )
 }

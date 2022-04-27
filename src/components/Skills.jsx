@@ -15,13 +15,13 @@ import MaterialUi from '../assets/materialui.png';
 
 
 
-import Mongo from '../assets/mongo.png';
+
 
 
 export const Skills=()=>{
 
     return(
-        <div name="skills" className=' common-width'>
+        <div name="skills" className='skills common-width'>
             <div>
                 <div className="skills-div-1">
                     <p>Experience</p>

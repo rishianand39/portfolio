@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png'
-import {FaBars, FaTimes,FaGithub,FaLinkedin,FaFacebook,FaTwitter,} from "react-icons/fa"
+import {FaBars, FaTimes,FaGithub,FaLinkedin,FaTwitter,} from "react-icons/fa"
 import {HiOutlineMail} from "react-icons/hi"
 import {BsFillPersonLinesFill} from "react-icons/bs"
-
+import {Link} from "react-scroll"
 
 export const Navbar=()=>{
     const [toggle, setToggle]=useState(true)
@@ -15,12 +15,31 @@ export const Navbar=()=>{
        <div className="navbar">
            <img className='navbar-logo' src={logo} alt="" />
            <div  className='navbar-menu'>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
+               <li>
+               <Link  to="home"  smooth={true} offset={-120} duration={500}>
+                 Home
+               </Link>
+               </li>
+               <li>
+               <Link  to="about"  smooth={true} offset={-80}  duration={500}>
+                 About
+               </Link>
+               </li>
+               <li>
+               <Link  to="skills"  smooth={true} offset={-80} duration={500}>
+                 Skill
+               </Link>
+               </li>
+               <li>
+               <Link  to="work"  smooth={true} offset={-80}  duration={500}>
+                 Project
+               </Link>
+               </li>
+               <li>
+               <Link  to="contact"  smooth={true} offset={-80}  duration={500}>
+                 Contact
+               </Link>
+               </li>
            </div>
 
            {/* Hamburger */}
@@ -40,19 +59,19 @@ export const Navbar=()=>{
            <div className='social-icon'>
                <ul>
                    <li>     
-                    <a href="/">Linkedin<FaLinkedin size={30}/></a>
+                    <a href="https://www.linkedin.com/in/rishianand39/" target="_blank" rel='noreferrer'>Linkedin<FaLinkedin size={30}/></a>
                    </li>
                    <li>       
-                    <a href="/">Twitter<FaTwitter size={30}/></a>
+                    <a href="https://twitter.com/rishianand39" target="_blank" rel='noreferrer'>Twitter<FaTwitter size={30}/></a>
                    </li>
                    <li>       
-                    <a href="/">GitHub<FaGithub className='github' size={30} /></a>
+                    <a href="https://github.com/rishianand39" target="_blank" rel='noreferrer'>GitHub<FaGithub className='github' size={30} /></a>
                    </li>
                    <li>       
-                    <a href="/">Email<HiOutlineMail size={30}/></a>
+                    <a href="mailto: rishi.rn818@gmail.com"  target="_blank" rel='noreferrer'>Email<HiOutlineMail size={30}/></a>
                    </li>
                    <li>       
-                    <a href="/">Resume<BsFillPersonLinesFill size={30}/></a>
+                    <a href="https://docs.google.com/document/d/19R8c3Vtdrvu64TLjubZZAf3jLqY1x-wBiZx0-p5UImg" target="_blank" rel='noreferrer'>Resume<BsFillPersonLinesFill size={30}/></a>
                    </li>
                </ul>
            </div>

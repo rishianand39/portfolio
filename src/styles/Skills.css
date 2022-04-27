@@ -1,4 +1,10 @@
 
+
+.skills{
+  /* border: 1px solid red; */
+  padding:70px 0;
+  
+}
 .skills-div-1 > p:first-child {
   display: inline;
   border-bottom: 5px solid #e54b6e;
@@ -21,6 +27,26 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
   text-align: center;
+}
+@media only screen and (max-width:1300px){
+  .grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+}
+@media only screen and (max-width:950px){
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+  }
+  
+}
+@media only screen and (max-width:550px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+  }
+  
 }
 .skills-div-2 {
   box-shadow: #050c16;

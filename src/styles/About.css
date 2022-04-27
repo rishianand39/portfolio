@@ -4,6 +4,7 @@
     /* border: 1px solid red; */
     max-width: 1500px;
     margin:20px auto;
+    padding:40px 0;
     color: rgb(218, 213, 213);
 
 }
@@ -11,8 +12,8 @@
     display: flex;
     align-items: center;
     /* border: 1px solid teal; */
-    font-size: 45px;
-    font-weight:900;
+    font-size: 33px;
+    font-weight:bold;
     color: rgb(218, 213, 213);
 } 
 .about-sub-div-1 p{
@@ -34,7 +35,7 @@
 }
  .about-sub-div-2>div:first-child>p{
      font-weight: bold;
-     font-size: 45px;
+     font-size: 29px;
      flex: 7;
      color: rgb(218, 213, 213);
  }
