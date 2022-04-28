@@ -8,7 +8,7 @@ import {Link} from "react-scroll"
 export const Navbar=()=>{
     const [toggle, setToggle]=useState(true)
     const handleToggle=()=>{
-        console.log(toggle)
+        // console.log(toggle)
        return setToggle(!toggle)
     }
     return(
@@ -48,12 +48,31 @@ export const Navbar=()=>{
            </div>
            {/* Mobile menu */}
            <ul className={toggle? "hidden" : "toggle-inner-menu hidden"}>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
-               <li>Home</li>
+               <li>
+               <Link onClick={handleToggle} to="home"  smooth={true} offset={-120} duration={500}>
+                 Home
+               </Link>
+               </li>
+               <li>
+               <Link onClick={handleToggle}  to="about"  smooth={true} offset={-80}  duration={500}>
+                 About
+               </Link>
+               </li>
+               <li>
+               <Link onClick={handleToggle} to="skills"  smooth={true} offset={-80} duration={500}>
+                 Skill
+               </Link>
+               </li>
+               <li>
+               <Link onClick={handleToggle} to="work"  smooth={true} offset={-80}  duration={500}>
+                 Project
+               </Link>
+               </li>
+               <li>
+               <Link onClick={handleToggle} to="contact"  smooth={true} offset={-80}  duration={500}>
+                 Contact
+               </Link>
+               </li>
            </ul>
            {/* social icon */}
            <div className='social-icon'>
