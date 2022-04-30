@@ -14,7 +14,7 @@ export const About =()=>{
                     <p>Hi. I'm Rishi, nice to meet you. Please take a look around.</p>
                 </div>
                 <div>
-                    <p>I ma passionate about building excellent software that impreves the lives of those around me. I specialize in creating software for clients ranging from indivduals and small-businesses all the way to large enterprose corporations, What would you do if you had a sofware experrt availage at your fingertips?</p>
+                    <p>I am passionate about building excellent software that impreves the lives of those around me. I specialize in creating software for clients ranging from indivduals and small-businesses all the way to large enterprose corporations, What would you do if you had a sofware experrt availage at your fingertips?</p>
                 </div>
             </div>
         </div>
