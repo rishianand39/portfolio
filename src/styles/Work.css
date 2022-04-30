@@ -1,5 +1,18 @@
 
+.project{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.project-desc{
+    color: white;
+    font-weight: bold;
+    background-color: #e54b6e;
+    width: 100%;
+    border-radius:0 0 6px 6px ;
+}
 .work-div{
     color: rgb(218, 213, 213);
     /* background-color: #0a192f; */
@@ -53,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .hover:hover{
     opacity: 100;
@@ -83,10 +97,12 @@
 }
 .project,.project:nth-child(1){
     background-image: url(../assets/movie.png);
-    height: 250px;
+    height: 350px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
     display: block;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border-radius: 10px;
